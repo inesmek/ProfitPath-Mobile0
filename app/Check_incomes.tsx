@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function SavingsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>check incomes screen</Text>
+      <Text style={styles.text}>check incomes screen test test</Text>
     </View>
   );
 }
