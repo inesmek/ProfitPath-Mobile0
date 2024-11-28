@@ -40,11 +40,15 @@ export default function Layout() {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
-      <Stack.Screen name="Add_transactions" options={{ title: "Add Transaction" }} />
-      <Stack.Screen name="Check_expenses" options={{ title: "Expenses" }} />
-      <Stack.Screen name="Check_incomes" options={{ title: "Incomes" }} />
-      <Stack.Screen name="Add_savings" options={{ title: "Savings" }} />
-      <Stack.Screen name="Investments" options={{ title: "Investments" }} />
+      <Stack.Screen name="Add_transactions" options={{ title: "Add Transaction" ,headerShown: false}} />
+      <Stack.Screen name="Check_expenses" options={{ title: "Expenses" ,headerShown: false}} />
+      <Stack.Screen name="Check_incomes" options={{ title: "Incomes" ,headerShown: false}} />
+      <Stack.Screen name="Savings" options={{ headerShown: false}} />
+      <Stack.Screen name="Investments" options={{ title: "Investments" ,headerShown: false}} />
+      <Stack.Screen name="enter-amount" options={{ title: "Enter Amount" ,headerShown: false}} />
+      <Stack.Screen name="date" options={{ title: "Date" ,headerShown: false}} />
+      <Stack.Screen name="select-category" options={{ title: "Select category" ,headerShown: false}} />
+      <Stack.Screen name="Add_savings" options={{ title: "Add savings" ,headerShown: false}} />
     </Stack>
   );
 }

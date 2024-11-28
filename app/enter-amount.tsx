@@ -29,10 +29,10 @@ const EnterAmountScreen = () => {
   };
 
   const handleAddAmount = () => {
-    router.replace({
+    /*router.replace({
       pathname: "/Add_transactions",
       params: { amount }
-    });
+    });*/
   };
 
   return (
@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F5F7FA',
+    marginTop: 50,
   },
   header: {
     flexDirection: 'row',
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   addButton: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#08519C',
     margin: 16,
     padding: 16,
     borderRadius: 8,

@@ -42,10 +42,10 @@ const DateScreen = () => {
   };
 
   const handleSetDate = () => {
-    router.replace({
+    /*router.replace({
       pathname: "/Add_transactions",
       params: { selectedDate: selectedDate.toISOString() }
-    });
+    });*/
   };
 
   return (
@@ -124,6 +124,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
+    marginTop: 50,
   },
   headerTitle: {
     fontSize: 20,
@@ -196,7 +197,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   setDateButton: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#08519C',
     margin: 16,
     padding: 16,
     borderRadius: 8,
@@ -205,11 +206,14 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
+    
+    
   },
   setDateText: {
     color: '#FFFFFF',
     fontSize: 16,
     fontWeight: '600',
+    
   },
 });
 

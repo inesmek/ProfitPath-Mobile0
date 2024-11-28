@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet, Text, SafeAreaView } from 'react-native';
-import Header from '@/components/Header';
+/*import Header from '@/components/Header';*/
 import BalanceCard from '@/components/BalanceCard';
 import TransactionItem from '@/components/TransactionItem';
 import ActionButton from '@/components/ActionButton';
@@ -30,7 +30,7 @@ export default function HomeScreen() {
   };
 
   const handleAddSaving = () => {
-    router.push("/Add_savings");
+    router.push("/Savings");
   };
 
   const handleInvestments = () => {
@@ -42,7 +42,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
-        <Header />
+        {/*<Header />*/}
         <ScrollView showsVerticalScrollIndicator={false}>
           <BalanceCard balance={totalBalance} />
           
@@ -76,7 +76,7 @@ export default function HomeScreen() {
               
             />
             <ActionButton 
-              title="Check Incomes" 
+              title="Check   Incomes" 
               onPress={handleCheckIncomes}
               variant="primary"
               
@@ -85,7 +85,7 @@ export default function HomeScreen() {
 
           <View style={[styles.buttonRow, styles.lastButtonRow]}>
             <ActionButton 
-              title="Add Saving" 
+              title="Savings" 
               onPress={handleAddSaving}
               variant="primary"
               
@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
+    marginTop: 50,
   },
   transactionsContainer: {
     marginTop: 16,

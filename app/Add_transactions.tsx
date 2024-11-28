@@ -153,7 +153,7 @@ const AddTransactionScreen: React.FC = () => {
           <View style={styles.inputContent}>
             <Text style={styles.inputLabel}>Select Category</Text>
             <Text style={[styles.valueText, !category && styles.placeholderText]}>
-              {category === 'Select Category' ? 'Select Category' : category}
+              {category === 'Select Category' ? '' : category}
             </Text>
           </View>
         </TouchableOpacity>
@@ -207,6 +207,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
+    marginTop: 50,
   },
   headerTitle: {
     fontSize: 22,
@@ -231,7 +232,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   activeButton: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#08519C',
   },
   toggleText: {
     fontWeight: '500',
@@ -269,10 +270,12 @@ const styles = StyleSheet.create({
   inputContent: {
     flex: 1,
     marginLeft: 16,
+    
   },
   inputLabel: {
     color: '#666',
     fontSize: 18,
+    
   },
   amountText: {
     fontSize: 20,
